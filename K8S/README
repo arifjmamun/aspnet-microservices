@@ -1,0 +1,23 @@
+## To forcely reload image of a deployment
+  `kubectl rollout restart deployment platforms-deployment`
+  `kubectl rollout restart deployment commands-deployment`
+
+## To get the current deployments
+  `kubectl get deployments`
+
+## To get the current deployed pods
+  `kubectl get pods`
+
+## To get the active services
+  `kubectl get services`
+
+## To get storageclass
+  `kubectl get storageclasses`
+
+## To get persistent volume claims
+  `kubectl get persistentvolumeclaims`
+  or
+  `kubectl get pvc`
+
+## To create secret that will be used for MSSQL database
+  `kubectl create secret generic mssql --from-literal=SA_PASSWORD="<password>"`
